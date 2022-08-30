@@ -1,0 +1,95 @@
+.burgerIngredients {
+    height: 290px;
+    width: 100%;
+    overflow: auto;
+}
+
+.burgerIngredients p {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+
+.ingredientsBlock{
+    background-color: #cf8f2e;
+    margin: 30px auto 0;
+    display: table;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ingredientsBlock p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.ingrBtns {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    justify-content: space-between;
+}
+
+.ingrBtns > div {
+    display: flex;
+}
+
+.ingrBtn {
+    border: 0;
+    background-color: #d39952;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    display: table;
+    width: 95px;
+}
+
+.burger-image {
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top  {
+    background-image: url(../Assets/Top.png);
+    background-size: 370px;
+    height: 90px;
+}
+
+
+.lettuce  {
+    background-image: url(../Assets/Lettuce.png);
+    background-size: 400px;
+    height: 33px;
+}
+
+.bacon {
+    background-image: url(../Assets/Bacon.png);
+    background-size: 370px;
+    height: 27px;
+}
+
+.cheese {
+    background-image: url(../Assets/Cheese.png);
+    background-size: 400px;
+    height: 28px;
+}
+
+.meat {
+    background-image: url(../Assets/Meat.png);
+    background-size: 380px;
+    height: 38px;
+}
+
+.bottom  {
+    background-image: url(../Assets/Bottom.png);
+    background-size: 370px;
+    height: 65px;
+}
