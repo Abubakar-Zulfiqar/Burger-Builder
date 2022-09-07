@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../Burger/Burger.css';
 
-export default class Burger extends Component {
+class Burger extends Component {
     state = {
         Lettuce: 0,
         Bacon: 0,
@@ -109,3 +109,5 @@ export default class Burger extends Component {
         )
     }
 }
+
+export default Burger;
