@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Burger } from './Components';
+import Burger from './Components/Burger/Burger';
 import store from './Redux/store';
 
 import './App.css';
