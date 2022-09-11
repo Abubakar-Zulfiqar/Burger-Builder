@@ -1,33 +1,25 @@
 import React from 'react';
-// import React, { Suspense, lazy } from 'react';
 
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import { Navbar, Burger } from './Components/index'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { Burger } from './Components';
+import store from './Redux/store';
 
 import './App.css';
 
-// const Hooks = lazy(() => import("./Components/Hooks"));
-// const Navbar = lazy(() => import("./Components//Navbar/Navbar"));
-// const Burger = lazy(() => import("./Components/Burger/Burger"));
 
 
 const App = () => (
   <>
-    <Navbar />
-    <div className="burgerContent">
-      <Burger />
-    </div>
-    {/* <Footer /> */}
-    {/* <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+    <Provider store={store}>
+      <Router>
         <Routes>
-          <Route path="/hooks" element={<Hooks />} />
-          <Route path="/home" element={<Navbar />} />
-          <Route path="/home" element={<Burger />} />
+          <Route path="/" element={<Burger />} />
         </Routes>
-      </Suspense>
-    </Router> */}
+      </Router>
+    </Provider>
   </>
 )
 
