@@ -14,9 +14,9 @@ const initialState = {
     bacon: 0,
     cheese: 0,
     meat: 0
-};
+}
 
-function reducer(state = initialState, action) {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         case LETTUCE_ADD:
             return {
@@ -59,8 +59,8 @@ function reducer(state = initialState, action) {
                 meat: state.meat === 0 ? 0 : state.meat - 1
             }
         default:
-            return state;
+            return state
     }
 }
 
-export default reducer;
+export default reducer

@@ -1,60 +1,60 @@
-.burgerIngredients {
+.burger-ingredients {
     height: 290px;
-    width: 100%;
     overflow: auto;
+    width: 100%;
 }
 
-.burgerIngredients p {
+.burger-ingredients p {
+    font-size: larger;
     font-weight: bold;
     text-align: center;
-    font-size: larger;
 }
 
-.ingredientsBlock{
+.ingredients-block{
     background-color: #cf8f2e;
-    margin: 30px auto 0;
-    display: table;
-    width: 100%;
-    max-width: 200px;
     border-radius: 3px;
+    display: table;
+    margin: 30px auto 0;
+    max-width: 200px;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
-.ingredientsBlock p {
+.ingredients-block p {
+    font-size: 18px;
+    font-weight: bold;
     margin: 0;
     padding: 0;
-    font-weight: bold;
-    font-size: 18px;
     text-transform: uppercase;
 }
 
-.ingrBtns {
+.ingr-btns {
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px;
     justify-content: space-between;
+    margin: 0 0 20px;
 }
 
-.ingrBtns > div {
+.ingr-btns > div {
     display: flex;
 }
 
-.ingrBtn {
-    border: 0;
+.ingr-btn {
     background-color: #d39952;
+    border: 0;
     color: #fff;
-    padding: 5px;
     cursor: pointer;
     display: table;
+    padding: 5px;
     width: 95px;
 }
 
 .burger-image {
-    width: 100%;
-    display: table;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    display: table;
+    width: 100%;
 }
 
 .top  {
