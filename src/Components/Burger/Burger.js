@@ -1,8 +1,8 @@
 import React from 'react'
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
 import Navbar from '../Navbar/Navbar'
-import BurgerContent from './BurgerContent';
+import BurgerContent from './BurgerContent'
 import {
     addLettuce,
     removeLettuce,
@@ -12,42 +12,42 @@ import {
     removeCheese,
     addMeat,
     removeMeat
-} from '../../Redux/Burger/action';
+} from '../../Redux/Burger/action'
 
-import './Burger.css';
+import './Burger.css'
 
-const Burger = (props) => {
+const Burger = props => {
 
     return (
         <>
             <Navbar />
-            <div className="burgerContent" />
-            <div className="burgerIngredients">
-                <div className="top burger-image" />
+            <div className='burger-content' />
+            <div className='burger-ingredients'>
+                <div className='top burger-image' />
                 <BurgerContent Lettuce={props.lettuce} Bacon={props.bacon} Cheese={props.cheese} Meat={props.meat} />
-                <div className="bottom burger-image" />
+                <div className='bottom burger-image' />
             </div>
-            <div className="ingredientsBlock">
-                <div className="ingrBtns">
+            <div className='ingredients-block'>
+                <div className='ingr-btns'>
                     <p>Lettuce</p>
                     <div>
-                        <button onClick={() => { props.addLettuceRedux() }} className='ingrBtn'>Add</button>
-                        <button onClick={() => { props.removeLettuceRedux() }} className='ingrBtn' >Remove</button>
+                        <button onClick={() => { props.addLettuceRedux() }} className='ingr-btn'>Add</button>
+                        <button onClick={() => { props.removeLettuceRedux() }} className='ingr-btn' >Remove</button>
                     </div>
                     <p>Bacon</p>
                     <div >
-                        <button onClick={() => { props.addBaconRedux() }} className='ingrBtn'>Add</button>
-                        <button onClick={() => { props.removeBaconRedux() }} className='ingrBtn' >Remove</button>
+                        <button onClick={() => { props.addBaconRedux() }} className='ingr-btn'>Add</button>
+                        <button onClick={() => { props.removeBaconRedux() }} className='ingr-btn' >Remove</button>
                     </div>
                     <p>Cheese</p>
                     <div >
-                        <button onClick={() => { props.addCheeseRedux() }} className='ingrBtn'>Add</button>
-                        <button onClick={() => { props.removeCheeseRedux() }} className='ingrBtn' >Remove</button>
+                        <button onClick={() => { props.addCheeseRedux() }} className='ingr-btn'>Add</button>
+                        <button onClick={() => { props.removeCheeseRedux() }} className='ingr-btn' >Remove</button>
                     </div>
                     <p>Meat</p>
                     <div >
-                        <button onClick={() => { props.addMeatRedux() }} className='ingrBtn'>Add</button>
-                        <button onClick={() => { props.removeMeatRedux() }} className='ingrBtn' >Remove</button>
+                        <button onClick={() => { props.addMeatRedux() }} className='ingr-btn'>Add</button>
+                        <button onClick={() => { props.removeMeatRedux() }} className='ingr-btn' >Remove</button>
                     </div>
                 </div>
             </div>
@@ -78,4 +78,4 @@ const mapDispathToProps = dispatch => {
 }
 
 
-export default connect(mapStateToProps, mapDispathToProps)(Burger);
+export default connect(mapStateToProps, mapDispathToProps)(Burger)
